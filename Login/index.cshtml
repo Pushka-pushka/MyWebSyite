@@ -1,0 +1,31 @@
+﻿@model MyWebSyite.ViewModel.LoginModel
+
+<form method="post"  action="/login/index">
+    <label> E-Mail </label>    
+    <input type="text" name="Email" value="@Model.Email"/>
+    <br/>
+    <label>Password</label>
+    <input type="password" name="Password" value="@Model.Password"/>
+    <hr/>
+    <button>Войти</button>
+    <input type="text" name="username" value="@Model.Email"/>
+
+</form>
+
+
+
+@* 
+@using (Html.BeginForm()){
+
+    <label>E-Mail</label>
+    @Html.TextBoxFor(m =>Model.Email)
+    <br />
+
+    <label>PASSWoRD</label>
+    @Html.PasswordFor(m => Model.Password)
+    <hr />
+
+    <button> ВОЙТИ!!</button>
+
+
+} *@

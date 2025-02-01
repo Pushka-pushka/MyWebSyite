@@ -1,0 +1,9 @@
+﻿@model MyWebSyite.ViewModel.UserModel
+
+@if (Model.IsLoggedIn)
+{
+    <text> Welcome: @Model.UserName </text>
+}
+else{
+    <text> please login </text>
+}

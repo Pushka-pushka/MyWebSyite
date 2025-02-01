@@ -1,0 +1,27 @@
+﻿
+
+
+
+
+<h1> for </h1>
+<p> Цикл for: </p>
+<ul>
+    @for(var i=0; i < Model.Length; i++)
+    {
+        <li> @Model[i].FirstName @Model[i].LastName (@Model[i].Age)</li>
+    }
+</ul>
+
+<h1> Foreach!!</h1>
+<p> циклы Форееач !!!</p>
+<ul>
+    @foreach(var p in Model)
+    {
+        <li>  @p.FirstName @p.LastName (@p.Age) </li>
+    }
+</ul>
+
+@using (Html.BeginForm())
+{
+    //здесь будет форма
+}

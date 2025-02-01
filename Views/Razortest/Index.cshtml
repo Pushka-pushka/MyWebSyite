@@ -1,0 +1,30 @@
+﻿@{
+    ViewBag.Title = "this s my idnex page";
+ 
+
+}
+@Model MyWebSite.ViewModel.Person
+
+
+
+@section Scripts{
+    <script type="text/javascript", src="~/scqipts/cart.js"> </script>
+}
+
+@section Head{
+    <p> этот текст отрисован в секции представления !!!!</p>
+}
+<h1> Heeelooo </h1>
+<p> Its a viev</p>
+<p>Name: @Model.FirstName</p>
+<p>Last Name: @Model.LastName </p>
+<p> Age: @Model.Age</p>
+@if (Model.Age < 15)
+{
+    <p> eeaah booy</p>
+}
+else
+{
+    <p> eblaaan</p>
+}
+
